@@ -1,0 +1,26 @@
+      <style>
+        @media (max-width: 767px){
+        .product__title--mobile{
+        	display: block;
+          	text-align: left;
+          	font-size: 35px !important;
+          margin-top: 0px !important;
+          margin-bottom: 20px !important;
+        }
+          
+          .product__title:not([class*='--mobile']){
+          	display: none;
+          }
+        }
+        
+               @media (min-width: 768px){
+        .product__title--mobile{
+        	display: none;
+        }
+          
+          .product__title:not([class*='--mobile']){
+          	display: block;
+          }
+        }
+      </style>
+      <h1 class="product__title--mobile">{{ product.title }}</h1>
